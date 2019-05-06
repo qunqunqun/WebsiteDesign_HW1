@@ -1,0 +1,150 @@
+body {
+    margin:0 auto;
+    text-align:center;
+    width: 750px;
+    background-image: url("images/color.png");
+    background-size:cover
+}
+
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #20c997;
+    margin:0 auto;
+    text-align:center;
+}
+
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #20c997;
+    margin:0 auto;
+    text-align:center;
+}
+
+h5{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #0062cc;
+    margin:0 auto;
+    text-align:center;
+}
+
+img {
+    max-width: 710px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #20c997;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #20c997;
+}
+
+main {
+    padding: 10px 20px;
+}
+
+footer {
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b8daff;
+  border-radius: 0.25rem;
+  color: #004085;
+  background-color: #cce5ff;
+}
+
+.error {
+    color: red;
+}
+
+label{
+    color: #0b2e13;
+}
+
+input {
+ text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+textarea{
+ text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+    height: 200px;
+width: 400px;
+transition: border .5s;
+    resize: none;
+}
+
+.btn{
+    border: 2px solid transparent;
+background: #0b2e13;
+color: #ffffff;
+font-size: 16px;
+line-height: 25px;
+padding: 10px 0;
+text-decoration: none;
+text-shadow: none;
+border-radius: 3px;
+box-shadow: none;
+transition: 0.25s;
+display: block;
+width: 250px;
+margin: 0 auto;
+}
+
+label {
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0062cc;
+}

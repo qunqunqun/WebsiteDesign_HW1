@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<h2>Log in</h2>
+<form method ="post">
+    {{ loginForm.csrf_token }} <br/>
+    {{  form_field(loginForm.username) }} <br/>
+    <br/>
+    {{  form_field(loginForm.password) }} <br/>
+    <br/>
+    <br/>
+    <br/>
+    {{ loginForm.submit }} <br/>
+    <br/>
+    {{ loginForm.toRegister }} <br/>
+
+</form>
+<form method="post">
+        {{ toReform.csrf_token }} <br/>
+        {{ toReform.toRegister }} <br/>
+</form>
+{% endblock %}

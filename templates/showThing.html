@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+
+
+{% block content %}
+
+
+<form method = "post">
+     {{ form.csrf_token }} <br/>
+    {{ form.Insert }}
+    {{ form.Delete }}<br/>
+</form>
+    <h1>您要卖物品如下：</h1>
+    {% for i in thing_list %}
+        <div>
+            <br/>
+            <h5>{{ i[1] }} </h5><br/>
+            <br/>
+            <label>{{ i[2] }} </label><br/>
+            <br/>
+            <img src="../static/images/{{ i[3] }}"/>
+        </div>
+    {% endfor %}
+{% endblock %}

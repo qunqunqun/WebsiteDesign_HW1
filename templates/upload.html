@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+
+{% block content %}
+<h2>请上传您的宝贝的描述</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        {{ form.csrf_token }} <br/>
+        {{ form_field(form.name) }} <br/>
+        {{ form_field(form.des)}} <br/>
+        {{ form_field(form.photo) }} <br/>
+        {{ form.submit() }} <br/>
+    </form>
+
+{% endblock %}

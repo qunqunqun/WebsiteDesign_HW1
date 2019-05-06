@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+
+{% block content %}
+<h2>Register in</h2>
+<form method="post">
+    {{ register_form.csrf_token }}
+    {{ form_field(register_form.username) }}     <br/>
+    {{ form_field(register_form.email) }}     <br/>
+    {{ form_field(register_form.password) }}     <br/>
+    {{ register_form.submit2 }}     <br/>
+</form>
+
+{% endblock %}
